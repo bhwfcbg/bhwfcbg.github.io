@@ -1,173 +1,326 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <!--Setting-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="renderer" content="webkit|ie-comp|ie-stand">
-    <meta name="apple-mobile-web-app-capable"  content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="format-detection" content="telephone=no,email=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
     
     
-    <!--Simple SEO-->
-
-
-<meta name="robots" content=all />
-<meta name="google" content=all />
-<meta name="googlebot" content=all />
-<meta name="verify" content=all />
-    <!--Title-->
-
-<title>小赵</title>
-
-<link rel="alternate" href="/atom.xml" title="小赵" type="application/atom+xml">
-
-
-<link rel="icon" href="/favicon.ico">
+        <link rel="shortcut icon" href="/images/favicon.ico">
+    
+     
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.2.30/dist/vuetify.min.css" rel="stylesheet">
+    
+<link rel="stylesheet" href="/css/main.css">
 
     
-
-<link rel="stylesheet" href="/css/base.css">
-<link rel="stylesheet" href="/css/pages/article-exp.css">
-<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/css/thirdParty/highlight/github.css">
-
-
-    <!--script-->
+    
 
 
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 
 
 
     
     
-<meta name="generator" content="Hexo 5.3.0"></head>
-
-<body id="normal">
-<!--[if lte IE 8]>
-<style>
-    html{ font-size: 1em }
-</style>
-<![endif]-->
-<!--[if lte IE 9]>
-<style>
-    header{ top: 71px; position: absolute!important;}
-    #container{padding-top: 151px!important;}
-</style>
-<div style="position:fixed;z-index:9999;left:0;top:0;width:100%;height:70px;background-color:#e0e0e0;color:#396CA5;border-bottom:1px solid #cecece;text-align:center;line-height:70px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
-<![endif]-->
-
-<div id="wrap">
-    <header >
-    <div id="site-meta">
-        <a href="/" id="logo">
-            <h1 class="title">小赵</h1>
-        </a>
+    
+        <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
         
+            load: ['[tex]/mhchem'],
+        
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        
+            packages: {'[+]': ['mhchem']},
+        
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+          
+
+    
+    
+    
+    
+    <title>
+          
+            小赵
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="小赵" type="application/atom+xml">
+</head>
+<body>
+    <div id="app">
+        <v-app>
+            <v-content id="page">
+                <v-container fluid>
+                    <v-row>
+                        <v-col cols="2" class="d-none d-md-block">
+                            <div id="sidebar" class="float-right">
+    <a href="/" rel="home">
+        <v-avatar size=96>
+            <img id="logo" src="/images/avatar.webp">     
+        </v-avatar> 
+    </a>
+    <v-divider></v-divider>
+    <div class="mini-menu">
+        <v-btn icon href="/">
+            <v-icon>home</v-icon>
+        </v-btn>
+        <v-btn icon href="/categories/">
+            <v-icon>folder</v-icon>
+        </v-btn>
+        <v-btn icon href="/tags/">
+            <v-icon>bookmark</v-icon>
+        </v-btn>
+        <v-btn icon @click="SetNightMode">
+            <v-icon>{{ nightMode }}</v-icon>
+        </v-btn>
     </div>
-    <ul id="nav">
+    <v-list id="main-menu" class="font-weight-bold" flat>
         
-            <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
-        
-            <li><a href="/atom.xml"><i class="fa fa-rss"></i>RSS</a></li>
-        
-        <li id="search"><a href="javascript:void(0)" rel="external nofollow noreferrer"><i class="fa fa-search"></i>搜索</a></li>
-    </ul>
-</header>
-
-    <div id="container">
-        
-<ul id="sidebar">
-    
-    
-<li class="widget notification">
-    <i class="fa fa-bell-o"></i>
-    <div>
-        
-<p>主题ylion v0.0.0版本即将上线，敬请期待~！
-主题作者：<a href="https://github.com/GeekaholicLin"
-title="fork me" target="_blank">Geekaholic</a></p>
-    </div>
-</li>
-
-    
-    
-<li class="widget widget-normal category">
-    <h3 class="fa fa-th widget-title">分类</h3>
-    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%BB%98%E8%AE%A4/"><i class="fa" aria-hidden="true">默认</i></a><span class="category-list-count">512</span></li></ul>
-</li>
-
-
-    
-    
-<li class="widget widget-normal archive">
-  <h3 class="fa fa-archive widget-title">归档</h3>
-    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/"><i class="fa" aria-hidden="true">四月 2021</i></a><span class="archive-list-count">512</span></li></ul>
-</li>
-
-
-    
-    
-<li class="widget widget-normal popular-posts" id="popular-posts">
-    <h3 class="fa fa-thermometer-3 widget-title">热门文章</h3>
-    <ul id="popular-content">
-        <li class="load-first"><i class="fa fa-spinner fa-pulse"></i></li>
-    </ul>
-</li>
-
-    
-    
-<li class="widget widget-normal tags">
-  <h3 class="fa fa-tags widget-title">标签云</h3>
-  <div class="tagcloud-content">
-    
-      <a href="/tags/%E9%BB%98%E8%AE%A4/" style="font-size: 0.14rem; color: #69c">默认</a>
-  </div>
-</li>
-
-
-    
-    
-<li class="widget widget-normal friends-link">
-    <h3 class="fa fa-globe widget-title">友链</h3><br/>
-
-    
-        <a href="http://geekaholiclin.github.io" rel="external nofollow noreferrer" class="fa" target="_blank">主题作者</a>
-
-    
-
-</li>
-
-    
-</ul>
-
-
-        <ul id="main">
-    
-
-    
-    
-    
-    
-    
-    
-    
-    <li  class="article-excerpt-wrap " _href = "/13522.html">
-        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/dm/34/e4567a62ffe713c4b3cb3b348621c5fd.jpg>
-           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
-        </div>
-        <div class="article-excerpt">
             
-            <a class="article-title-link" href="/13522.html">
-                <h2 class="article-title">西行纪</h2>
-            </a>
+            <v-list-item href="/archives/" link>
+            <v-list-item-icon><v-icon>archive</v-icon></v-list-item-icon>
+            <v-list-item-content>
+                归档
+            </v-list-item-content>
+            </v-list-item>
+        
             
-            <p class="article-content">
+            <v-list-item href="/about/" link>
+            <v-list-item-icon><v-icon>account_circle</v-icon></v-list-item-icon>
+            <v-list-item-content>
+                关于
+            </v-list-item-content>
+            </v-list-item>
+        
+            
+            <v-list-item href="https://garybear.cn/" link>
+            <v-list-item-icon><v-icon>rss_feed</v-icon></v-list-item-icon>
+            <v-list-item-content>
+                我的博客
+            </v-list-item-content>
+            </v-list-item>
+        
+            
+            <v-list-item href="https://garybear.cn/hexo-theme-insulin/doc/#/" link>
+            <v-list-item-icon><v-icon>insert_drive_file</v-icon></v-list-item-icon>
+            <v-list-item-content>
+                说明文档
+            </v-list-item-content>
+            </v-list-item>
+        
+    </v-list>
+    <v-divider></v-divider>
+    
+        <v-list id="sub-menu" class="font-weight-medium" dense>
+            
                 
+                    <v-list-item href="/categories/%E9%BB%98%E8%AE%A4/" link>
+                        <v-badge :value="menuHover" transition="slide-y-transition" inline content="512" >
+                            <v-hover v-model="menuHover">
+                                <v-list-item-content>
+                                    <span>默认</span>                              
+                                </v-list-item-content>                           
+                            </v-hover>
+                        </v-badge>
+                    </v-list-item>
+                
+            
+        </v-list>    
+    
+
+    <div id="footer">
+        <div class="footer-social">
+            
+                
+                <v-btn icon href="mailto:kb1000fx@gmail.com" target="_blank">
+                    <v-icon>fas fa-envelope</v-icon>
+                </v-btn>
+            
+                
+                <v-btn icon href="https://github.com/kb1000fx" target="_blank">
+                    <v-icon>fab fa-github</v-icon>
+                </v-btn>
+            
+                
+                <v-btn icon href="https://steamcommunity.com/profiles/76561198346798163" target="_blank">
+                    <v-icon>fab fa-steam</v-icon>
+                </v-btn>
+            
+                
+                <v-btn icon href="https://weibo.com/kb1000fx" target="_blank">
+                    <v-icon>fab fa-weibo</v-icon>
+                </v-btn>
+            
+        </div>
+        <v-divider></v-divider>
+        <div class="footer-content">
+            
+                <span id="busuanzi_container_site_uv" style="display: none;"> 
+                    总访客量 <span id="busuanzi_value_site_uv"></span>
+                </span>
+                <br>
+            
+            <span>Theme: <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/kb1000fx/hexo-theme-insulin">Insulin</a></span><br>
+            <span>Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/">Hexo</a></span><br>
+            <span>
+                &copy; 2015 - 2021 
+                小赵
+            </span>
+        </div>
+    </div>
+</div>
+
+                        </v-col>
+                        <v-col cols="12" md="10">
+                            <v-row>
+  <v-col cols="12" md="8" align-self="end">
+    <div id="site-header">
+      <div id="site-title">
+        <a href="/" rel="home">小赵</a>
+      </div>
+      <div id="site-description"></div>
+      <div id="mobile-menu" class="d-block d-md-none">
+        <v-text-field label="请输入关键字" data-src="search.xml" v-model="searchHeaderValue" prepend-inner-icon="search" clearable clear-icon="clear" @keydown.enter="EnterSearch(searchHeaderValue,false)"></v-text-field>
+        <div class="mobile-mini-menu">
+          <v-btn icon href="/">
+              <v-icon>home</v-icon>
+          </v-btn>
+          <v-btn icon href="/categories/">
+              <v-icon>folder</v-icon>
+          </v-btn>
+          <v-btn icon href="/tags/">
+              <v-icon>bookmark</v-icon>
+          </v-btn>
+          <v-btn icon @click="SetNightMode">
+              <v-icon>{{ nightMode }}</v-icon>
+          </v-btn>
+          
+            
+            <v-btn icon href="/archives/">
+              <v-icon>archive</v-icon>
+            </v-btn>
+          
+            
+            <v-btn icon href="/about/">
+              <v-icon>account_circle</v-icon>
+            </v-btn>
+          
+            
+            <v-btn icon href="https://garybear.cn/">
+              <v-icon>rss_feed</v-icon>
+            </v-btn>
+          
+            
+            <v-btn icon href="https://garybear.cn/hexo-theme-insulin/doc/#/">
+              <v-icon>insert_drive_file</v-icon>
+            </v-btn>
+          
+        </div>
+      </div>    
+    </div>
+  </v-col>  
+  <v-col cols="4" align-self="end" class="d-none d-md-block">
+    <v-col align-self="end">
+      <v-text-field label="请输入关键字" data-src="search.xml" v-model="searchHeaderValue" prepend-icon="search" clearable clear-icon="clear" @keydown.enter="EnterSearch(searchHeaderValue,false)"></v-text-field>
+    </v-col> 
+  </v-col>
+</v-row>
+
+                            <v-card class="elevation-2 index-card">
+  
+    <article class="index-article">
+      
+      <div class="index-article-header">
+        <v-row no-gutters>
+          <v-col cols="auto">
+            <div class="index-article-header-date font-weight-medium">
+              2021-04-06
+            </div>
+          </v-col>
+          <v-spacer></v-spacer>
+          <v-col cols="auto">
+            
+              <v-card flat color="secondary" tile class="index-article-header-tag  font-weight-medium">
+                
+                  <span class="index-article-header-tag-content">
+                    <v-icon>fas fa-tag</v-icon>
+                    <a rel="tag" href = /tags/%E9%BB%98%E8%AE%A4/ >默认</a>
+                  </span>
+                
+              </v-card>
+            
+          </v-col>
+        </v-row>
+        <span>
+          
+            <a class="index-article-header-category font-weight-bold" href="/categories/%E9%BB%98%E8%AE%A4/">默认></a>
+           
+        </span> 
+        <a class="index-article-header-title font-weight-medium" href="/13522.html">西行纪</a>
+      </div>
+      
+      <div class="index-article-content">
+        
+          
 
 
 
@@ -291,113 +444,50 @@ HTTP
 
 
 
-
-
-
-
-
-
-
-HTTP
-西行纪-第30集
-
-
-
-
-
-
-
-
-
-
-
-HTTP
-西行纪-第29集
-
-
-
-
-
-
-
-
-
-
-
-HTTP
-西行纪-第28集
-
-
-
-
-
-
-
-
-
-
-
-HTTP
-西行纪-第27集
-
-
-
-
 ...
-            </p>
-            <div class="article-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-            <i class="fa fa-folder-open-o"></i>
-        <span>默认</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-         <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            默认
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta ">2021/04/06</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-            <i class="fa fa-thermometer-three-quarters"></i>
-        <span class="hits hits-meta " data-leadcloud-title="西行纪"
-              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
-    </span>
-    
-    
-    <a href="/13522.html" class="read-article">阅读全文</a>
-    
-</div>
-
-        </div>
         
-    </li>
-    
-    
-    <li  class="article-excerpt-wrap " _href = "/13522.html">
-        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/dm/30/392979a5fd455102272ae3b8287b8d97.jpg>
-           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
-        </div>
-        <div class="article-excerpt">
+      </div>
+      
+      <div class="index-article-readmore ">
+        <v-btn text href="/13522.html">阅读更多</v-btn>
+      </div>
+      <v-divider></v-divider>
+    </article> 
+  
+    <article class="index-article">
+      
+      <div class="index-article-header">
+        <v-row no-gutters>
+          <v-col cols="auto">
+            <div class="index-article-header-date font-weight-medium">
+              2021-04-06
+            </div>
+          </v-col>
+          <v-spacer></v-spacer>
+          <v-col cols="auto">
             
-            <a class="article-title-link" href="/13522.html">
-                <h2 class="article-title">迈罗.墨菲定律 第一季</h2>
-            </a>
-            
-            <p class="article-content">
+              <v-card flat color="secondary" tile class="index-article-header-tag  font-weight-medium">
                 
+                  <span class="index-article-header-tag-content">
+                    <v-icon>fas fa-tag</v-icon>
+                    <a rel="tag" href = /tags/%E9%BB%98%E8%AE%A4/ >默认</a>
+                  </span>
+                
+              </v-card>
+            
+          </v-col>
+        </v-row>
+        <span>
+          
+            <a class="index-article-header-category font-weight-bold" href="/categories/%E9%BB%98%E8%AE%A4/">默认></a>
+           
+        </span> 
+        <a class="index-article-header-title font-weight-medium" href="/13522.html">迈罗.墨菲定律 第一季</a>
+      </div>
+      
+      <div class="index-article-content">
+        
+          
 
 
 
@@ -541,123 +631,50 @@ HTTP
 
 度盘
 第11集
-
-
-
-
-
-
-
-
-
-
-
-度盘
-第12集
-
-
-
-
-
-
-
-
-
-
-
-度盘
-第13集
-
-
-
-
-
-
-
-
-
-
-
-度盘
-第14集密码：pw2s
-
-
-
-
-
-
-
-
-
-
-
-度盘
-第15集密码：jjgk
-
-
-
-
-
-
-
-
-
-
 ...
-            </p>
-            <div class="article-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-            <i class="fa fa-folder-open-o"></i>
-        <span>默认</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-         <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            默认
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta ">2021/04/06</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-            <i class="fa fa-thermometer-three-quarters"></i>
-        <span class="hits hits-meta " data-leadcloud-title="迈罗.墨菲定律 第一季"
-              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
-    </span>
-    
-    
-    <a href="/13522.html" class="read-article">阅读全文</a>
-    
-</div>
-
-        </div>
         
-    </li>
-    
-    
-    <li  class="article-excerpt-wrap " _href = "/13522.html">
-        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/dm/36/854da2221df7f2ac126485876b19d2e4.jpg>
-           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
-        </div>
-        <div class="article-excerpt">
+      </div>
+      
+      <div class="index-article-readmore ">
+        <v-btn text href="/13522.html">阅读更多</v-btn>
+      </div>
+      <v-divider></v-divider>
+    </article> 
+  
+    <article class="index-article">
+      
+      <div class="index-article-header">
+        <v-row no-gutters>
+          <v-col cols="auto">
+            <div class="index-article-header-date font-weight-medium">
+              2021-04-06
+            </div>
+          </v-col>
+          <v-spacer></v-spacer>
+          <v-col cols="auto">
             
-            <a class="article-title-link" href="/13522.html">
-                <h2 class="article-title">马男波杰克 第六季</h2>
-            </a>
-            
-            <p class="article-content">
+              <v-card flat color="secondary" tile class="index-article-header-tag  font-weight-medium">
                 
+                  <span class="index-article-header-tag-content">
+                    <v-icon>fas fa-tag</v-icon>
+                    <a rel="tag" href = /tags/%E9%BB%98%E8%AE%A4/ >默认</a>
+                  </span>
+                
+              </v-card>
+            
+          </v-col>
+        </v-row>
+        <span>
+          
+            <a class="index-article-header-category font-weight-bold" href="/categories/%E9%BB%98%E8%AE%A4/">默认></a>
+           
+        </span> 
+        <a class="index-article-header-title font-weight-medium" href="/13522.html">马男波杰克 第六季</a>
+      </div>
+      
+      <div class="index-article-content">
+        
+          
 
 
 
@@ -698,74 +715,50 @@ BoJack.Horseman.马男波杰克.S06E02.720p.HDTV.x264.双语字幕精校-深影�
 
 
 电驴
-BoJack.Horseman.马男波杰克.S06E03.720p.HDTV.x264.双语字幕精校-深影字幕组.mp4
-
-
-
-
-
-
-
-
-
-
-
-电驴
-BoJack.Horseman.马男波杰克.S06E04.720p.HDTV.x2...
-            </p>
-            <div class="article-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-            <i class="fa fa-folder-open-o"></i>
-        <span>默认</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-         <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            默认
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta ">2021/04/06</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-            <i class="fa fa-thermometer-three-quarters"></i>
-        <span class="hits hits-meta " data-leadcloud-title="马男波杰克 第六季"
-              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
-    </span>
-    
-    
-    <a href="/13522.html" class="read-article">阅读全文</a>
-    
-</div>
-
-        </div>
+BoJack.Horseman....
         
-    </li>
-    
-    
-    <li  class="article-excerpt-wrap " _href = "/13522.html">
-        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/dm/36/7800f3c65d8a3ce0b0238fba7af6bf57.jpg>
-           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
-        </div>
-        <div class="article-excerpt">
+      </div>
+      
+      <div class="index-article-readmore ">
+        <v-btn text href="/13522.html">阅读更多</v-btn>
+      </div>
+      <v-divider></v-divider>
+    </article> 
+  
+    <article class="index-article">
+      
+      <div class="index-article-header">
+        <v-row no-gutters>
+          <v-col cols="auto">
+            <div class="index-article-header-date font-weight-medium">
+              2021-04-06
+            </div>
+          </v-col>
+          <v-spacer></v-spacer>
+          <v-col cols="auto">
             
-            <a class="article-title-link" href="/13522.html">
-                <h2 class="article-title">发公主：剧集版 第三季</h2>
-            </a>
-            
-            <p class="article-content">
+              <v-card flat color="secondary" tile class="index-article-header-tag  font-weight-medium">
                 
+                  <span class="index-article-header-tag-content">
+                    <v-icon>fas fa-tag</v-icon>
+                    <a rel="tag" href = /tags/%E9%BB%98%E8%AE%A4/ >默认</a>
+                  </span>
+                
+              </v-card>
+            
+          </v-col>
+        </v-row>
+        <span>
+          
+            <a class="index-article-header-category font-weight-bold" href="/categories/%E9%BB%98%E8%AE%A4/">默认></a>
+           
+        </span> 
+        <a class="index-article-header-title font-weight-medium" href="/13522.html">发公主：剧集版 第三季</a>
+      </div>
+      
+      <div class="index-article-content">
+        
+          
 
 
 
@@ -879,110 +872,50 @@ BoJack.Horseman.马男波杰克.S06E04.720p.HDTV.x2...
 
 
 
-
-
-
-
-度盘
-第9集密码：mn54
-
-
-
-
-
-
-
-
-
-
-
-度盘
-第10集密码：k18q
-
-
-
-
-
-
-
-
-
-
-
-度盘
-第11集密码：dvdk
-
-
-
-
-
-
-
-
-
-
-
-度盘
-第12集密码：ejg5
-
-
-
-
 ...
-            </p>
-            <div class="article-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-            <i class="fa fa-folder-open-o"></i>
-        <span>默认</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-         <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            默认
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta ">2021/04/06</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-            <i class="fa fa-thermometer-three-quarters"></i>
-        <span class="hits hits-meta " data-leadcloud-title="发公主：剧集版 第三季"
-              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
-    </span>
-    
-    
-    <a href="/13522.html" class="read-article">阅读全文</a>
-    
-</div>
-
-        </div>
         
-    </li>
-    
-    
-    <li  class="article-excerpt-wrap " _href = "/13522.html">
-        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/29/6495703050ff65e7645fd6685dc577b8.jpg>
-           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
-        </div>
-        <div class="article-excerpt">
+      </div>
+      
+      <div class="index-article-readmore ">
+        <v-btn text href="/13522.html">阅读更多</v-btn>
+      </div>
+      <v-divider></v-divider>
+    </article> 
+  
+    <article class="index-article">
+      
+      <div class="index-article-header">
+        <v-row no-gutters>
+          <v-col cols="auto">
+            <div class="index-article-header-date font-weight-medium">
+              2021-04-06
+            </div>
+          </v-col>
+          <v-spacer></v-spacer>
+          <v-col cols="auto">
             
-            <a class="article-title-link" href="/13522.html">
-                <h2 class="article-title">15年</h2>
-            </a>
-            
-            <p class="article-content">
+              <v-card flat color="secondary" tile class="index-article-header-tag  font-weight-medium">
                 
+                  <span class="index-article-header-tag-content">
+                    <v-icon>fas fa-tag</v-icon>
+                    <a rel="tag" href = /tags/%E9%BB%98%E8%AE%A4/ >默认</a>
+                  </span>
+                
+              </v-card>
+            
+          </v-col>
+        </v-row>
+        <span>
+          
+            <a class="index-article-header-category font-weight-bold" href="/categories/%E9%BB%98%E8%AE%A4/">默认></a>
+           
+        </span> 
+        <a class="index-article-header-title font-weight-medium" href="/13522.html">15年</a>
+      </div>
+      
+      <div class="index-article-content">
+        
+          
 
 
 
@@ -1013,60 +946,49 @@ BoJack.Horseman.马男波杰克.S06E04.720p.HDTV.x2...
 
 
 喜欢《15年》的人也喜欢：
-            </p>
-            <div class="article-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-            <i class="fa fa-folder-open-o"></i>
-        <span>默认</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-         <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            默认
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta ">2021/04/06</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-            <i class="fa fa-thermometer-three-quarters"></i>
-        <span class="hits hits-meta " data-leadcloud-title="15年"
-              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
-    </span>
-    
-    
-    <a href="/13522.html" class="read-article">阅读全文</a>
-    
-</div>
-
-        </div>
         
-    </li>
-    
-    
-    <li  class="article-excerpt-wrap " _href = "/13522.html">
-        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/11/94/78bf0168d486547e99d251fab6d516c5.jpg>
-           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
-        </div>
-        <div class="article-excerpt">
+      </div>
+      
+      <div class="index-article-readmore ">
+        <v-btn text href="/13522.html">阅读更多</v-btn>
+      </div>
+      <v-divider></v-divider>
+    </article> 
+  
+    <article class="index-article">
+      
+      <div class="index-article-header">
+        <v-row no-gutters>
+          <v-col cols="auto">
+            <div class="index-article-header-date font-weight-medium">
+              2021-04-06
+            </div>
+          </v-col>
+          <v-spacer></v-spacer>
+          <v-col cols="auto">
             
-            <a class="article-title-link" href="/13522.html">
-                <h2 class="article-title">2067</h2>
-            </a>
-            
-            <p class="article-content">
+              <v-card flat color="secondary" tile class="index-article-header-tag  font-weight-medium">
                 
+                  <span class="index-article-header-tag-content">
+                    <v-icon>fas fa-tag</v-icon>
+                    <a rel="tag" href = /tags/%E9%BB%98%E8%AE%A4/ >默认</a>
+                  </span>
+                
+              </v-card>
+            
+          </v-col>
+        </v-row>
+        <span>
+          
+            <a class="index-article-header-category font-weight-bold" href="/categories/%E9%BB%98%E8%AE%A4/">默认></a>
+           
+        </span> 
+        <a class="index-article-header-title font-weight-medium" href="/13522.html">2067</a>
+      </div>
+      
+      <div class="index-article-content">
+        
+          
 
 
 
@@ -1095,60 +1017,49 @@ BoJack.Horseman.马男波杰克.S06E04.720p.HDTV.x2...
 
 
 喜欢《2067》的人也喜欢：
-            </p>
-            <div class="article-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-            <i class="fa fa-folder-open-o"></i>
-        <span>默认</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-         <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            默认
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta ">2021/04/06</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-            <i class="fa fa-thermometer-three-quarters"></i>
-        <span class="hits hits-meta " data-leadcloud-title="2067"
-              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
-    </span>
-    
-    
-    <a href="/13522.html" class="read-article">阅读全文</a>
-    
-</div>
-
-        </div>
         
-    </li>
-    
-    
-    <li  class="article-excerpt-wrap " _href = "/13522.html">
-        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/52/ecf7be41e933a747428b7e64e4129a3e.jpg>
-           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
-        </div>
-        <div class="article-excerpt">
+      </div>
+      
+      <div class="index-article-readmore ">
+        <v-btn text href="/13522.html">阅读更多</v-btn>
+      </div>
+      <v-divider></v-divider>
+    </article> 
+  
+    <article class="index-article">
+      
+      <div class="index-article-header">
+        <v-row no-gutters>
+          <v-col cols="auto">
+            <div class="index-article-header-date font-weight-medium">
+              2021-04-06
+            </div>
+          </v-col>
+          <v-spacer></v-spacer>
+          <v-col cols="auto">
             
-            <a class="article-title-link" href="/13522.html">
-                <h2 class="article-title">BLACKPINK：照亮天空</h2>
-            </a>
-            
-            <p class="article-content">
+              <v-card flat color="secondary" tile class="index-article-header-tag  font-weight-medium">
                 
+                  <span class="index-article-header-tag-content">
+                    <v-icon>fas fa-tag</v-icon>
+                    <a rel="tag" href = /tags/%E9%BB%98%E8%AE%A4/ >默认</a>
+                  </span>
+                
+              </v-card>
+            
+          </v-col>
+        </v-row>
+        <span>
+          
+            <a class="index-article-header-category font-weight-bold" href="/categories/%E9%BB%98%E8%AE%A4/">默认></a>
+           
+        </span> 
+        <a class="index-article-header-title font-weight-medium" href="/13522.html">BLACKPINK：照亮天空</a>
+      </div>
+      
+      <div class="index-article-content">
+        
+          
 
 
 
@@ -1183,61 +1094,50 @@ BLACKPINK：照亮天空迅雷下载：
 
 
 电驴
-[BLACKPINK：照亮天空.BLACKPINK Light Up the Sky.2020.HD1080p.中文字幕.mp4 2.56GB](ed2k://|file|[钛影视taiyingshi.vip]BLACK...
-            </p>
-            <div class="article-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-            <i class="fa fa-folder-open-o"></i>
-        <span>默认</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-         <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            默认
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta ">2021/04/06</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-            <i class="fa fa-thermometer-three-quarters"></i>
-        <span class="hits hits-meta " data-leadcloud-title="BLACKPINK：照亮天空"
-              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
-    </span>
-    
-    
-    <a href="/13522.html" class="read-article">阅读全文</a>
-    
-</div>
-
-        </div>
+[BLACKPINK...
         
-    </li>
-    
-    
-    <li  class="article-excerpt-wrap " _href = "/13522.html">
-        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/52/d0c3dc0bb3d492dc256929b719aaf52c.jpg>
-           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
-        </div>
-        <div class="article-excerpt">
+      </div>
+      
+      <div class="index-article-readmore ">
+        <v-btn text href="/13522.html">阅读更多</v-btn>
+      </div>
+      <v-divider></v-divider>
+    </article> 
+  
+    <article class="index-article">
+      
+      <div class="index-article-header">
+        <v-row no-gutters>
+          <v-col cols="auto">
+            <div class="index-article-header-date font-weight-medium">
+              2021-04-06
+            </div>
+          </v-col>
+          <v-spacer></v-spacer>
+          <v-col cols="auto">
             
-            <a class="article-title-link" href="/13522.html">
-                <h2 class="article-title">DNA</h2>
-            </a>
-            
-            <p class="article-content">
+              <v-card flat color="secondary" tile class="index-article-header-tag  font-weight-medium">
                 
+                  <span class="index-article-header-tag-content">
+                    <v-icon>fas fa-tag</v-icon>
+                    <a rel="tag" href = /tags/%E9%BB%98%E8%AE%A4/ >默认</a>
+                  </span>
+                
+              </v-card>
+            
+          </v-col>
+        </v-row>
+        <span>
+          
+            <a class="index-article-header-category font-weight-bold" href="/categories/%E9%BB%98%E8%AE%A4/">默认></a>
+           
+        </span> 
+        <a class="index-article-header-title font-weight-medium" href="/13522.html">DNA</a>
+      </div>
+      
+      <div class="index-article-content">
+        
+          
 
 
 
@@ -1266,60 +1166,49 @@ DNA百度云网盘密码： jnz8
 
 
 DNA迅雷下载：喜欢《DNA》的人也喜欢：
-            </p>
-            <div class="article-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-            <i class="fa fa-folder-open-o"></i>
-        <span>默认</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-         <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            默认
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta ">2021/04/06</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-            <i class="fa fa-thermometer-three-quarters"></i>
-        <span class="hits hits-meta " data-leadcloud-title="DNA"
-              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
-    </span>
-    
-    
-    <a href="/13522.html" class="read-article">阅读全文</a>
-    
-</div>
-
-        </div>
         
-    </li>
-    
-    
-    <li  class="article-excerpt-wrap " _href = "/13522.html">
-        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/09/a5521302e021d6268fb0083e7d7d397d.jpg>
-           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
-        </div>
-        <div class="article-excerpt">
+      </div>
+      
+      <div class="index-article-readmore ">
+        <v-btn text href="/13522.html">阅读更多</v-btn>
+      </div>
+      <v-divider></v-divider>
+    </article> 
+  
+    <article class="index-article">
+      
+      <div class="index-article-header">
+        <v-row no-gutters>
+          <v-col cols="auto">
+            <div class="index-article-header-date font-weight-medium">
+              2021-04-06
+            </div>
+          </v-col>
+          <v-spacer></v-spacer>
+          <v-col cols="auto">
             
-            <a class="article-title-link" href="/13522.html">
-                <h2 class="article-title">Goodby 以谎言开端的人生喜剧</h2>
-            </a>
-            
-            <p class="article-content">
+              <v-card flat color="secondary" tile class="index-article-header-tag  font-weight-medium">
                 
+                  <span class="index-article-header-tag-content">
+                    <v-icon>fas fa-tag</v-icon>
+                    <a rel="tag" href = /tags/%E9%BB%98%E8%AE%A4/ >默认</a>
+                  </span>
+                
+              </v-card>
+            
+          </v-col>
+        </v-row>
+        <span>
+          
+            <a class="index-article-header-category font-weight-bold" href="/categories/%E9%BB%98%E8%AE%A4/">默认></a>
+           
+        </span> 
+        <a class="index-article-header-title font-weight-medium" href="/13522.html">Goodby 以谎言开端的人生喜剧</a>
+      </div>
+      
+      <div class="index-article-content">
+        
+          
 
 
 
@@ -1335,90 +1224,50 @@ Goodby 以谎言开端的人生喜剧原名： グッドバイ～嘘からはじ
 评分：豆瓣6.3暂无
 Goodby 以谎言开端的人生喜剧预告片·花絮Goodbye 以谎言开端的人生喜剧 预告片
 Goodbye 以谎言开端的人生喜剧 先行版
-Goodby 以谎言开端的人生喜剧百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
-
-
-
-
-度盘
-Goodby 以谎言开端的人生喜剧百度云网盘密码： 8r92
-
-
-
-
-
-
-
-
-
-
-
-度盘
-Goodby 以谎言开端的人生喜剧百度云网盘密码：mhz0
-
-
-
-
-
-
-
-
-
-Goodby...
-            </p>
-            <div class="article-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-            <i class="fa fa-folder-open-o"></i>
-        <span>默认</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-         <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            默认
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta ">2021/04/06</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-            <i class="fa fa-thermometer-three-quarters"></i>
-        <span class="hits hits-meta " data-leadcloud-title="Goodby 以谎言开端的人生喜剧"
-              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
-    </span>
-    
-    
-    <a href="/13522.html" class="read-article">阅读全文</a>
-    
-</div>
-
-        </div>
+Goodby 以谎言开端的人生喜剧百度云资源：(若已失效可尝试复制链接到百度网盘离线下...
         
-    </li>
-    
-    
-    <li  class="article-excerpt-wrap " _href = "/13522.html">
-        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/52/97ad6e6f72420466d15ff00dde5a9efd.jpg>
-           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
-        </div>
-        <div class="article-excerpt">
+      </div>
+      
+      <div class="index-article-readmore ">
+        <v-btn text href="/13522.html">阅读更多</v-btn>
+      </div>
+      <v-divider></v-divider>
+    </article> 
+  
+    <article class="index-article">
+      
+      <div class="index-article-header">
+        <v-row no-gutters>
+          <v-col cols="auto">
+            <div class="index-article-header-date font-weight-medium">
+              2021-04-06
+            </div>
+          </v-col>
+          <v-spacer></v-spacer>
+          <v-col cols="auto">
             
-            <a class="article-title-link" href="/13522.html">
-                <h2 class="article-title">Go！Go！小小车向前冲：万圣节</h2>
-            </a>
-            
-            <p class="article-content">
+              <v-card flat color="secondary" tile class="index-article-header-tag  font-weight-medium">
                 
+                  <span class="index-article-header-tag-content">
+                    <v-icon>fas fa-tag</v-icon>
+                    <a rel="tag" href = /tags/%E9%BB%98%E8%AE%A4/ >默认</a>
+                  </span>
+                
+              </v-card>
+            
+          </v-col>
+        </v-row>
+        <span>
+          
+            <a class="index-article-header-category font-weight-bold" href="/categories/%E9%BB%98%E8%AE%A4/">默认></a>
+           
+        </span> 
+        <a class="index-article-header-title font-weight-medium" href="/13522.html">Go！Go！小小车向前冲：万圣节</a>
+      </div>
+      
+      <div class="index-article-content">
+        
+          
 
 
 
@@ -1438,154 +1287,60 @@ Go！Go！小小车向前冲：万圣节迅雷下载：
 
 
 电驴
-柯利嘟嘟车：万圣节.A.Go.Go.Cory.Carson.Halloween.2020.HD1080p.中英双字.mp4 373.56MB
-
-
-
-
-
-
-
-
-
-喜欢《Go！Go！小小车向前冲：万圣节》的人也喜欢：
-            </p>
-            <div class="article-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-            <i class="fa fa-folder-open-o"></i>
-        <span>默认</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-         <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            默认
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta ">2021/04/06</span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-            <i class="fa fa-thermometer-three-quarters"></i>
-        <span class="hits hits-meta " data-leadcloud-title="Go！Go！小小车向前冲：万圣节"
-              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
-    </span>
-    
-    
-    <a href="/13522.html" class="read-article">阅读全文</a>
-    
-</div>
-
-        </div>
+柯利嘟嘟车：万圣节.A.Go.Go.Cory.Carson.Halloween.2...
         
-    </li>
-    
-    
+      </div>
+      
+      <div class="index-article-readmore ">
+        <v-btn text href="/13522.html">阅读更多</v-btn>
+      </div>
+      <v-divider></v-divider>
+    </article> 
+   
+</v-card>  
 
-</ul>
 
-<div id="page-pagination">
-    <div id="page-nav">
-        <a class="extend prev" rel="prev" href="/page/7/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/52/">52</a><a class="extend next" rel="next" href="/page/9/">Next &raquo;</a>
-    </div>
-</div>
-
-    </div>
-    <footer id="footer">
-    
-    <div class="social">
-        
-        <a href="https://www.example1.com" rel="external nofollow noreferrer" class="fa fa-free-code-camp" target="_blank" title="freecodecamp"></a>
-        
-        <a href="https://www.example2.com" rel="external nofollow noreferrer" class="fa fa-github" target="_blank" title="Follow me~"></a>
-        
+  <div id="pagination" class="text-center">
+    <v-pagination 
+      v-model="currentPage" 
+      :length=52 
+      @input="PageChange" 
+      prev-icon="chevron_left"
+      next-icon="chevron_right"
+      color="secondary"
+    ></v-pagination>
+  </div>
+         
+                            <div id="mobile-footer" class="d-block d-md-none">
+                                <v-divider></v-divider>
+                                <div id="mobile-footer-content">
+                                    <span>Theme: <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/kb1000fx/hexo-theme-insulin">Insulin</a> &nbsp; Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/">Hexo</a></span><br>
+                                    <span> &copy; 2015 - 2021 小赵</span>
+                                </div>
+                            </div>                   
+                        </v-col>                                            
+                    </v-row>
+                </v-container>
+            </v-content>
+        </v-app>
     </div>
     
-    <div>
-        
-        <a href="/" class="copyright-links">小赵</a>&copy;2015 - 2021.All Rights
-        Reserved.
-    </div>
-    <p>Powered by <a href="https://hexo.io" rel="external nofollow noreferrer" class="copyright-links" target="_blank">Hexo</a> | Theme by <a
-                href="https://github.com/GeekaholicLin" class="copyright-links" target="_blank">GeekaholicLin</a>
-    </p>
-    
-    
-    <p>
-        <span id="busuanzi_container_site_uv" class="fa fa-bar-chart">
-        欢迎第<span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span>位小伙伴~
-        </span>
-    </p>
-    
-</footer>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.30"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-base64@3.5.2/base64.min.js"></script>
 
-</div>
-    <ul id="tools">
-    <li class="totop-btn fa fa-angle-up"></li>
-    <li class="exchange-btn fa fa-exchange"></li>
-  
-    
-
-    
-</ul>
-<p id="process"></p>
-<div id="search-overlay">
-    <div class="search-area-wrap">
-        <div id="search-area">
-            <div class="input-wrap focus">
-                <i class="fa fa-search" aria-hidden="true"></i>
-                <input id="search-input" autofocus autocomplete="off" type="text"
-                       placeholder="search this website..."/>
-            </div>
-            <ul id="search-result">
-                <li class="load-first"><i class="fa fa-spinner fa-pulse"></i></li>
-            </ul>
-        </div>
-    </div>
-</div>
+<script src="/js/main.js"></script>
 
 
-    
-<script src="/js/highsong.js"></script>
+
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
 
 
-<script src="/js/search.js"></script>
-
-<script type="text/javascript">
-    //theme config datas
-    var copyrightObj = {};
-    copyrightObj.enable = 'true';
-    copyrightObj.triggerCopyLength = '200';
-    copyrightObj.appendText = '商业转载请联系作者获得授权,非商业转载请注明出处 © example';
-    var leancloudObj = {};
-    leancloudObj.enable = 'true';
-    leancloudObj.className = 'BlogCounter';
-    leancloudObj.limits = '10';
-</script>
-<script type="text/javascript">
-    var search = {};
-    var search_path = "search.xml";
-    if (!search_path) {
-        search_path = "search.xml";
-    }
-    search.path = "/" + search_path;
-    search.func =  _ajax.init();
-</script>
-
-<script src="/js/app.js"></script>
 
 
 
