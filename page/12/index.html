@@ -1,432 +1,1243 @@
-
-<!DOCTYPE html>
-<html lang="zh-CN">
-
-
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <meta name="theme-color" content="#202020"/>
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
-  
-  
-    <meta name="keywords" content="" />
-  
-
-  
-    <meta name="description" content="小赵," />
-  
-  
-  <link rel="icon" type="image/x-icon" href="/logo.png">
-  <title> [ 小赵 ]</title>
-  
-    <!-- stylesheets list from config.yml -->
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable"  content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
     
-      <link rel="stylesheet" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css">
     
-      <link rel="stylesheet" href="/css/xoxo.css">
+    <!--Simple SEO-->
+
+
+<meta name="robots" content=all />
+<meta name="google" content=all />
+<meta name="googlebot" content=all />
+<meta name="verify" content=all />
+    <!--Title-->
+
+<title>小赵</title>
+
+<link rel="alternate" href="/atom.xml" title="小赵" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
     
-  
-<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="小赵" type="application/atom+xml">
-</head>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/pages/article-exp.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/thirdParty/highlight/github.css">
 
 
-<body>
-  <div class="nav-container">
-    <nav class="home-menu pure-menu pure-menu-horizontal">
-  <a class="pure-menu-heading" href="/">
-    <img class="avatar" src="https://bhwfcbg.github.io/images/logo.png">
-    <span class="title">小赵</span>
-  </a>
+    <!--script-->
 
-  <ul class="pure-menu-list clearfix">
-      
-          
-            <li class="pure-menu-item actived"><a href="/" class="pure-menu-link">首页</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a href="/archives" class="pure-menu-link">归档</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a href="/tags" class="pure-menu-link">标签</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a href="/search" class="pure-menu-link">搜索</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://0xff000000.com" class="pure-menu-link">关于</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a href="/atom.xml" class="pure-menu-link">订阅</a></li>
-          
-      
-  </ul>
-   
-</nav>
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    
+    
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body id="normal">
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<style>
+    header{ top: 71px; position: absolute!important;}
+    #container{padding-top: 151px!important;}
+</style>
+<div style="position:fixed;z-index:9999;left:0;top:0;width:100%;height:70px;background-color:#e0e0e0;color:#396CA5;border-bottom:1px solid #cecece;text-align:center;line-height:70px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<div id="wrap">
+    <header >
+    <div id="site-meta">
+        <a href="/" id="logo">
+            <h1 class="title">小赵</h1>
+        </a>
+        
+    </div>
+    <ul id="nav">
+        
+            <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+        
+            <li><a href="/atom.xml"><i class="fa fa-rss"></i>RSS</a></li>
+        
+        <li id="search"><a href="javascript:void(0)" rel="external nofollow noreferrer"><i class="fa fa-search"></i>搜索</a></li>
+    </ul>
+</header>
+
+    <div id="container">
+        
+<ul id="sidebar">
+    
+    
+<li class="widget notification">
+    <i class="fa fa-bell-o"></i>
+    <div>
+        
+<p>主题ylion v0.0.0版本即将上线，敬请期待~！
+主题作者：<a href="https://github.com/GeekaholicLin"
+title="fork me" target="_blank">Geekaholic</a></p>
+    </div>
+</li>
+
+    
+    
+<li class="widget widget-normal category">
+    <h3 class="fa fa-th widget-title">分类</h3>
+    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%BB%98%E8%AE%A4/"><i class="fa" aria-hidden="true">默认</i></a><span class="category-list-count">512</span></li></ul>
+</li>
+
+
+    
+    
+<li class="widget widget-normal archive">
+  <h3 class="fa fa-archive widget-title">归档</h3>
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/"><i class="fa" aria-hidden="true">四月 2021</i></a><span class="archive-list-count">512</span></li></ul>
+</li>
+
+
+    
+    
+<li class="widget widget-normal popular-posts" id="popular-posts">
+    <h3 class="fa fa-thermometer-3 widget-title">热门文章</h3>
+    <ul id="popular-content">
+        <li class="load-first"><i class="fa fa-spinner fa-pulse"></i></li>
+    </ul>
+</li>
+
+    
+    
+<li class="widget widget-normal tags">
+  <h3 class="fa fa-tags widget-title">标签云</h3>
+  <div class="tagcloud-content">
+    
+      <a href="/tags/%E9%BB%98%E8%AE%A4/" style="font-size: 0.14rem; color: #69c">默认</a>
   </div>
+</li>
 
-  <div class="container" id="content-outer">
-    <div class="inner" id="content-inner">
-      
 
-  <div class="recent-posts">
+    
+    
+<li class="widget widget-normal friends-link">
+    <h3 class="fa fa-globe widget-title">友链</h3><br/>
+
+    
+        <a href="http://geekaholiclin.github.io" rel="external nofollow noreferrer" class="fa" target="_blank">主题作者</a>
+
     
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>传奇王子2：贵族降临</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+</li>
+
+    
+</ul>
+
+
+        <ul id="main">
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= https://img2.doubanio.com/img/trailer/medium/2580125413.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">传奇王子2：贵族降临</h2>
+            </a>
+            
+            <p class="article-content">
+                
+
+
+
+
+传奇王子2：贵族降临原名： 貴族降臨 -PRINCE OF LEGEND-
+别名：Aristocratic Birth: PRINCE OF LEGEND - THE MOVIE
+导演： 河合勇人
+主演：白滨亚岚 片寄凉太 铃木伸之 佐野玲於 町田启太 清原翔 广濑智纪 荒牧慶彦 饭岛宽骑 加藤谅 袴田吉彦 山本耕史 内藤大湖
+类型： 剧情 喜剧 爱情
+地区： 日本
+年代： 2020
+语言： 日语
+长度： 94分钟
+评分：豆瓣4.9暂无
+传奇王子2：贵族降临预告片·花絮传奇王子2：贵族降临 预告片1
+传奇王子2：贵族降临 预告片2
+传奇王子2：贵族降临 预告片3
+传奇王子2：贵族降临 预告片4
+传奇王子2：贵族降临百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+
+
+
+
+度盘
+传奇王子2：贵族降临百度云网盘密码： 252e
+
+
+
+
+
+
+
+
+
+传奇王子2：贵族降临迅雷...
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="传奇王子2：贵族降临"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= https://img2.doubanio.com/img/trailer/medium/2610370293.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">伤心画廊</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>伤心画廊</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+伤心画廊原名： The Broken Heart Gallery
+主演：莫莉·戈登 Dacre Montgomery 菲莉帕·苏 苏琪·沃特豪斯 伯纳黛特·彼得斯 杰拉尔丁·维斯瓦纳坦 Utkarsh Ambudkar 梅根·弗格森 阿图罗·卡斯特罗 泰勒·希尔 尼古拉斯·卡雷拉  展开
+类型： 爱情
+地区： 美国
+年代： 2020
+语言： 英语
+长度： 108分钟
+评分：豆瓣暂无暂无
+伤心画廊预告片·花絮伤心画廊 预告片
+伤心画廊百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+
+
+
+
+度盘
+伤心画廊百度云网盘密码： s9h5
+
+
+
+
+
+
+
+
+
+伤心画廊迅雷下载：
+
+
+
+电驴
+伤心画廊.The.Broken.Hearts.Gallery.2020.HD720p.中文字幕.mp4 1.24GB
+
+
+
+
+
+
+
+
+
+
+
+电驴
+伤心画廊.The.Broken.Hearts...
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="伤心画廊"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= https://img1.doubanio.com/img/trailer/medium/2617068327.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">侠盗</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>侠盗</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+侠盗原名： Rogue
+别名：重装救援：全境猎杀(台)
+导演： 迈克尔·巴塞特
+主演：梅根·福克斯 菲利普·文切斯特 李-安妮·莱本伯格 布兰登·奥雷 格雷格·克列克 亚当·迪康 霍启刚 Sisanda Henna Calli Taylor Isabel Bassett  展开
+类型： 动作 战争
+地区： 英国
+年代： 2020
+语言： 英语
+评分：豆瓣暂无暂无
+侠盗预告片·花絮侠盗 中国台湾预告片1 (中文字幕)
+侠盗 预告片2
+侠盗百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+
+
+
+
+度盘
+侠盗百度云网盘密码： r9jv
+
+
+
+
+
+
+
+
+
+侠盗迅雷下载：
+
+
+
+电驴
+侠盗.Rogue.2020.HD1080p.英语中字.mp4 2.77GB
+
+
+
+
+
+
+
+
+
+
+
+电驴
+侠盗.Rogue.2020.HD1080p.中英双字.mkv 1.77GB
+
+
+
+
+
+
+
+...
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="侠盗"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= https://img2.doubanio.com/img/trailer/medium/2619101422.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">信条</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>信条</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+信条原名： TENET
+别名：TENET天能(港/台) / 时空追捕 / TENƎ⊥ / Tempus / 天呐天(豆友译名)
+导演： 克里斯托弗·诺兰
+主演：罗伯特·帕丁森 约翰·大卫·华盛顿 伊丽莎白·德比茨基 亚伦·泰勒-约翰逊 迈克尔·凯恩 肯尼思·布拉纳 克蕾曼丝·波西 迪宝·卡帕蒂娅 尤里·科洛科利尼科夫
+类型： 剧情 动作 科幻
+地区： 美国
+年代： 2020
+语言： 英语
+评分：豆瓣7.8暂无
+信条预告片·花絮信条 中国预告片1：终极版 (中文字幕)
+信条 中国预告片2 (中文字幕)
+信条 中国预告片3：主题曲版 (中文字幕)
+信条 中国预告片4：约翰问候版 (中文字幕)
+信条 中国预告片5 (中文字幕)
+信条 中国预告片6：时空逆战版 (中文字幕)
+信条百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+
+
+
+
+度盘
+信条百度云网盘密码： 6twk
+...
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="信条"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/51/1879b786ce346a8f72551a9b21c8e5d8.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">假日约会</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>假日约会</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+假日约会原名： Holidate
+别名：佳节限定恋人 / 节日情侣
+导演： 约翰·怀特塞尔
+主演：艾玛·罗伯茨 卢克·布雷西
+类型： 喜剧 爱情
+地区： 美国
+年代： 2020
+语言： 英语
+长度： 103分钟
+评分：豆瓣5.7暂无
+假日约会百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+
+
+
+
+度盘
+假日约会百度云网盘密码： a9is
+
+
+
+
+
+
+
+
+
+假日约会迅雷下载：
+
+
+
+电驴
+假日约会.Holidate.2020.HD1080p.中文字幕.mp4 2.41GB
+
+
+
+
+
+
+
+
+
+喜欢《假日约会》的人也喜欢：
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="假日约会"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/16/83/391d07af522e649b5612fbee09ff5ff6.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">傀儡姬</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>傀儡姬</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+傀儡姬导演： 侯国涛
+主演：季晨 鹤男 王珞嘉 张冬 冯俊杰 刘永刚 戴明 脑门额尔德尼 韩梦武
+地区： 大陆
+年代： 2019
+语言： 汉语普通话
+长度： 75分钟
+评分：豆瓣暂无
+傀儡姬百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+
+
+
+
+度盘
+傀儡姬百度云网盘密码：xx5g
+
+
+
+
+
+
+
+
+
+傀儡姬迅雷下载：
+
+
+
+电驴
+傀儡姬.2019.4K2160p.国语中字.mp4下载 1.62GB
+
+
+
+
+
+
+
+
+
+
+
+电驴
+傀儡姬.2019.4K2160p.国语中字.无水印.mp4下载 1.62GB
+
+
+
+
+
+
+
+
+
+
+
+电驴
+傀儡姬HD1080P高清国语中字
+
+
+
+
+
+
+
+
+
+
+
+磁力
+傀儡姬HD1080P高清国语中字
+
+
+
+
+
+
+
+
+
+
+
+磁力
+傀儡姬.2019.HD1080P.X264.AAC.国语中字 1.62g
+
+
+
+
+
+
+
+
+
+
+
+磁力
+傀儡姬.20...
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="傀儡姬"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= https://img9.doubanio.com/img/trailer/medium/2616190736.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">倒数追魂</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>倒数追魂</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+倒数追魂原名： Seized
+别名：Rizk
+导演： 艾萨克·佛罗伦汀
+主演：斯科特·阿金斯 马里奥·范·皮布尔斯
+类型： 动作 犯罪
+地区： 美国
+年代： 2020
+语言： 英语
+长度： 85分钟
+评分：豆瓣暂无暂无
+倒数追魂预告片·花絮倒数追魂 预告片
+倒数追魂百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+倒数追魂迅雷下载：
+
+
+
+电驴
+倒数追魂.Seized.2020.HD1080p.中英双字.mp4 1.61GB
+
+
+
+
+
+
+
+
+
+喜欢《倒数追魂》的人也喜欢：
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="倒数追魂"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/02/94b10db3e6707577325a3962bac29af0.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">先人之夜</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>先人之夜</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+先人之夜原名： Bhoot Chaturdashi
+导演： Shabbir Mallick
+主演：Mrinmoy Adhikari Soumendra Bhattacharya 阿里安·鲍弥克
+类型： 恐怖
+地区： 印度
+年代： 2019
+语言： 孟加拉语
+长度： 98分钟
+评分：豆瓣暂无暂无
+先人之夜百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+先人之夜迅雷下载：
+
+
+
+电驴
+[先人之夜.Bhoot Chaturdashi.2019.HD1080p.印地语中字.mp4电驴下载 1.88GB](ed2k://|file|[钛影视taiyingshi.vip]先人之夜.Bhoot Chaturdashi.2019.HD1080p.印地语中字.mp4|2023154114|8A34941A383A728118BD272FF83E0D68|h=6UWQE72C7H3Y...
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="先人之夜"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= https://img2.doubanio.com/img/trailer/medium/2617827212.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">八佰</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>八佰</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+八佰别名：八百启示录 / 战争启示录之八百壮士 / The Eight Hundred
+导演： 管虎
+主演：王千源 张译 姜武 黄志忠 张俊一 欧豪 杜淳 魏晨 张宥浩 唐艺昕 李九霄 李晨 梁静 侯勇 辛柏青 俞灏明 刘晓庆 姚晨 郑恺 余皑磊 黄晓明 徐嘉雯 张承 马精武 胡晓光 陆思宇 白恩 曹璐 刘云龙 杨嘉华  展开
+类型： 剧情 历史 战争
+地区： 大陆
+年代： 2019
+语言： 汉语普通话
+长度： 147分钟
+评分：豆瓣7.7暂无
+八佰预告片·花絮八佰 预告片1：信念版 (中文字幕)
+八佰 预告片2
+八佰 预告片3：生死版
+八佰 预告片4
+八佰 预告片5：终极版
+八佰 预告片6
+八佰百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+八佰迅雷下载：
+
+
+
+磁力
+八佰.2020.BD1080p.国语中字.mp4
+
+
+
+
+
+
+
+
+
+
+
+电驴
+八佰.2020....
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="八佰"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/51/1dc68529bb18980433ab499b1eb6d0e8.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">公理</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>公理</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+公理原名： Foster Boy
+别名：受虐男孩
+导演： Youssef Delara
+主演：马修·莫迪恩 Michael Hyatt
+地区： 美国
+年代： 2019
+语言： 英语
+长度： 106分钟
+评分：豆瓣6.7暂无
+公理百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+公理迅雷下载：
+
+
+
+磁力
+公理.2019.BD1080p.中英双字.mp4
+
+
+
+
+
+
+
+
+
+
+
+电驴
+公理.2019.BD1080p.中英双字.mp4 2.72GB
+
+
+
+
+
+
+
+
+
+
+
+电驴
+[公理.Foster Boy.2019.BD720p.中英双字.mp4 1.19GB](ed2k://|file|[钛影视taiyingshi.vip]公理.Foster Boy.2019.BD720p.中英双字.mp4|1280150566|94591CA186EEAF73A364472855943F...
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="公理"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
-  </div>
+    
 
+</ul>
 
+<div id="page-pagination">
+    <div id="page-nav">
+        <a class="extend prev" rel="prev" href="/page/11/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="page-number" href="/page/14/">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/52/">52</a><a class="extend next" rel="next" href="/page/13/">Next &raquo;</a>
+    </div>
+</div>
 
     </div>
-
+    <footer id="footer">
     
-      <nav class="page-nav text-center">
-          <a class="extend prev" rel="prev" href="/page/11/">〈</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/page/52/">52</a><a class="extend next" rel="next" href="/page/13/">〉</a>
-      </nav>
-    
-
-  </div>
-  <footer class="footer text-center">
-    <div id="bottom-inner">
-        <a class="bottom-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.0xff000000.com">首页</a> |
-        <a class="bottom-item" href="https://0xff000000.com" rel="external nofollow noreferrer" target="_blank">主站</a> |
-        <a class="bottom-item" href="https://github.com/KevinOfNeu" rel="external nofollow noreferrer" target="_blank">GitHub</a> |
-        <a class="bottom-item" href="https://hexo.io" rel="external nofollow noreferrer" target="_blank">Powered by hexo</a> |
-        <a class="bottom-item" href="https://github.com/KevinOfNeu/hexo-theme-xoxo" rel="external nofollow noreferrer" target="_blank">Theme xoxo</a>
+    <div class="social">
+        
+        <a href="https://www.example1.com" rel="external nofollow noreferrer" class="fa fa-free-code-camp" target="_blank" title="freecodecamp"></a>
+        
+        <a href="https://www.example2.com" rel="external nofollow noreferrer" class="fa fa-github" target="_blank" title="Follow me~"></a>
+        
     </div>
+    
+    <div>
+        
+        <a href="/" class="copyright-links">小赵</a>&copy;2015 - 2021.All Rights
+        Reserved.
+    </div>
+    <p>Powered by <a href="https://hexo.io" rel="external nofollow noreferrer" class="copyright-links" target="_blank">Hexo</a> | Theme by <a
+                href="https://github.com/GeekaholicLin" class="copyright-links" target="_blank">GeekaholicLin</a>
+    </p>
+    
+    
+    <p>
+        <span id="busuanzi_container_site_uv" class="fa fa-bar-chart">
+        欢迎第<span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span>位小伙伴~
+        </span>
+    </p>
+    
 </footer>
+
+</div>
+    <ul id="tools">
+    <li class="totop-btn fa fa-angle-up"></li>
+    <li class="exchange-btn fa fa-exchange"></li>
   
+    
 
-<script>
-  (function(window, document, undefined) {
+    
+</ul>
+<p id="process"></p>
+<div id="search-overlay">
+    <div class="search-area-wrap">
+        <div id="search-area">
+            <div class="input-wrap focus">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input id="search-input" autofocus autocomplete="off" type="text"
+                       placeholder="search this website..."/>
+            </div>
+            <ul id="search-result">
+                <li class="load-first"><i class="fa fa-spinner fa-pulse"></i></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-    var timer = null;
 
-    function returnTop() {
-      cancelAnimationFrame(timer);
-      timer = requestAnimationFrame(function fn() {
-        var oTop = document.body.scrollTop || document.documentElement.scrollTop;
-        if (oTop > 0) {
-          document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
-          timer = requestAnimationFrame(fn);
-        } else {
-          cancelAnimationFrame(timer);
-        }
-      });
+    
+<script src="/js/highsong.js"></script>
+
+
+
+
+
+<script src="/js/search.js"></script>
+
+<script type="text/javascript">
+    //theme config datas
+    var copyrightObj = {};
+    copyrightObj.enable = 'true';
+    copyrightObj.triggerCopyLength = '200';
+    copyrightObj.appendText = '商业转载请联系作者获得授权,非商业转载请注明出处 © example';
+    var leancloudObj = {};
+    leancloudObj.enable = 'true';
+    leancloudObj.className = 'BlogCounter';
+    leancloudObj.limits = '10';
+</script>
+<script type="text/javascript">
+    var search = {};
+    var search_path = "search.xml";
+    if (!search_path) {
+        search_path = "search.xml";
     }
-
-    var hearts = [];
-    window.requestAnimationFrame = (function() {
-      return window.requestAnimationFrame ||
-        window.webkitRequestAnimationFrame ||
-        window.mozRequestAnimationFrame ||
-        window.oRequestAnimationFrame ||
-        window.msRequestAnimationFrame ||
-        function(callback) {
-          setTimeout(callback, 1000 / 60);
-        }
-    })();
-    init();
-
-    function init() {
-      css(".heart{z-index:9999;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
-      attachEvent();
-      gameloop();
-      addMenuEvent();
-    }
-
-    function gameloop() {
-      for (var i = 0; i < hearts.length; i++) {
-        if (hearts[i].alpha <= 0) {
-          document.body.removeChild(hearts[i].el);
-          hearts.splice(i, 1);
-          continue;
-        }
-        hearts[i].y--;
-        hearts[i].scale += 0.004;
-        hearts[i].alpha -= 0.013;
-        hearts[i].el.style.cssText = "left:" + hearts[i].x + "px;top:" + hearts[i].y + "px;opacity:" + hearts[i].alpha + ";transform:scale(" + hearts[i].scale + "," + hearts[i].scale + ") rotate(45deg);background:" + hearts[i].color;
-      }
-      requestAnimationFrame(gameloop);
-    }
-
-    /**
-     * 给logo设置点击事件
-     * 
-     * - 回到顶部
-     * - 出现爱心
-     */
-    function attachEvent() {
-      var old = typeof window.onclick === "function" && window.onclick;
-      var logo = document.getElementById("logo");
-      if (logo) {
-        logo.onclick = function(event) {
-          returnTop();
-          old && old();
-          createHeart(event);
-        }
-      }
-      
-    }
-
-    function createHeart(event) {
-      var d = document.createElement("div");
-      d.className = "heart";
-      hearts.push({
-        el: d,
-        x: event.clientX - 5,
-        y: event.clientY - 5,
-        scale: 1,
-        alpha: 1,
-        color: randomColor()
-      });
-      document.body.appendChild(d);
-    }
-
-    function css(css) {
-      var style = document.createElement("style");
-      style.type = "text/css";
-      try {
-        style.appendChild(document.createTextNode(css));
-      } catch (ex) {
-        style.styleSheet.cssText = css;
-      }
-      document.getElementsByTagName('head')[0].appendChild(style);
-    }
-
-    function randomColor() {
-      // return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + ")";
-      return "#F44336";
-    }
-
-    function addMenuEvent() {
-      var menu = document.getElementById('menu-main-post');
-      if (menu) {
-        var toc = document.getElementById('toc');
-        if (toc) {
-          menu.onclick = function() {
-            if (toc) {
-              if (toc.style.display == 'block') {
-                toc.style.display = 'none';
-              } else {
-                toc.style.display = 'block';
-              }
-            }
-          };
-        } else {
-          menu.style.display = 'none';
-        }
-      }
-    }
-
-  })(window, document);
+    search.path = "/" + search_path;
+    search.func =  _ajax.init();
 </script>
 
-  
+<script src="/js/app.js"></script>
 
 
 

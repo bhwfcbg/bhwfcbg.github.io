@@ -1,432 +1,1139 @@
-
-<!DOCTYPE html>
-<html lang="zh-CN">
-
-
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <meta name="theme-color" content="#202020"/>
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
-  
-  
-    <meta name="keywords" content="" />
-  
-
-  
-    <meta name="description" content="小赵," />
-  
-  
-  <link rel="icon" type="image/x-icon" href="/logo.png">
-  <title> [ 小赵 ]</title>
-  
-    <!-- stylesheets list from config.yml -->
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable"  content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
     
-      <link rel="stylesheet" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css">
     
-      <link rel="stylesheet" href="/css/xoxo.css">
+    <!--Simple SEO-->
+
+
+<meta name="robots" content=all />
+<meta name="google" content=all />
+<meta name="googlebot" content=all />
+<meta name="verify" content=all />
+    <!--Title-->
+
+<title>小赵</title>
+
+<link rel="alternate" href="/atom.xml" title="小赵" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
     
-  
-<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="小赵" type="application/atom+xml">
-</head>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/pages/article-exp.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/thirdParty/highlight/github.css">
 
 
-<body>
-  <div class="nav-container">
-    <nav class="home-menu pure-menu pure-menu-horizontal">
-  <a class="pure-menu-heading" href="/">
-    <img class="avatar" src="https://bhwfcbg.github.io/images/logo.png">
-    <span class="title">小赵</span>
-  </a>
+    <!--script-->
 
-  <ul class="pure-menu-list clearfix">
-      
-          
-            <li class="pure-menu-item actived"><a href="/" class="pure-menu-link">首页</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a href="/archives" class="pure-menu-link">归档</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a href="/tags" class="pure-menu-link">标签</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a href="/search" class="pure-menu-link">搜索</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://0xff000000.com" class="pure-menu-link">关于</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a href="/atom.xml" class="pure-menu-link">订阅</a></li>
-          
-      
-  </ul>
-   
-</nav>
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    
+    
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body id="normal">
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<style>
+    header{ top: 71px; position: absolute!important;}
+    #container{padding-top: 151px!important;}
+</style>
+<div style="position:fixed;z-index:9999;left:0;top:0;width:100%;height:70px;background-color:#e0e0e0;color:#396CA5;border-bottom:1px solid #cecece;text-align:center;line-height:70px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<div id="wrap">
+    <header >
+    <div id="site-meta">
+        <a href="/" id="logo">
+            <h1 class="title">小赵</h1>
+        </a>
+        
+    </div>
+    <ul id="nav">
+        
+            <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+        
+            <li><a href="/atom.xml"><i class="fa fa-rss"></i>RSS</a></li>
+        
+        <li id="search"><a href="javascript:void(0)" rel="external nofollow noreferrer"><i class="fa fa-search"></i>搜索</a></li>
+    </ul>
+</header>
+
+    <div id="container">
+        
+<ul id="sidebar">
+    
+    
+<li class="widget notification">
+    <i class="fa fa-bell-o"></i>
+    <div>
+        
+<p>主题ylion v0.0.0版本即将上线，敬请期待~！
+主题作者：<a href="https://github.com/GeekaholicLin"
+title="fork me" target="_blank">Geekaholic</a></p>
+    </div>
+</li>
+
+    
+    
+<li class="widget widget-normal category">
+    <h3 class="fa fa-th widget-title">分类</h3>
+    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%BB%98%E8%AE%A4/"><i class="fa" aria-hidden="true">默认</i></a><span class="category-list-count">512</span></li></ul>
+</li>
+
+
+    
+    
+<li class="widget widget-normal archive">
+  <h3 class="fa fa-archive widget-title">归档</h3>
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/"><i class="fa" aria-hidden="true">四月 2021</i></a><span class="archive-list-count">512</span></li></ul>
+</li>
+
+
+    
+    
+<li class="widget widget-normal popular-posts" id="popular-posts">
+    <h3 class="fa fa-thermometer-3 widget-title">热门文章</h3>
+    <ul id="popular-content">
+        <li class="load-first"><i class="fa fa-spinner fa-pulse"></i></li>
+    </ul>
+</li>
+
+    
+    
+<li class="widget widget-normal tags">
+  <h3 class="fa fa-tags widget-title">标签云</h3>
+  <div class="tagcloud-content">
+    
+      <a href="/tags/%E9%BB%98%E8%AE%A4/" style="font-size: 0.14rem; color: #69c">默认</a>
   </div>
+</li>
 
-  <div class="container" id="content-outer">
-    <div class="inner" id="content-inner">
-      
 
-  <div class="recent-posts">
+    
+    
+<li class="widget widget-normal friends-link">
+    <h3 class="fa fa-globe widget-title">友链</h3><br/>
+
+    
+        <a href="http://geekaholiclin.github.io" rel="external nofollow noreferrer" class="fa" target="_blank">主题作者</a>
+
     
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>同学麦娜丝</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+</li>
+
+    
+</ul>
+
+
+        <ul id="main">
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= https://img1.doubanio.com/img/trailer/medium/2623568838.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">同学麦娜丝</h2>
+            </a>
+            
+            <p class="article-content">
+                
+
+
+
+
+同学麦娜丝原名： 同學麥娜絲
+别名：Classmates Minus
+导演： 黄信尧
+主演：郑人硕 施名帅 刘冠廷 纳豆 洪小铃 潘慧如 朱芷莹
+类型： 剧情
+地区： 台湾
+年代： 2020
+语言： 汉语普通话
+长度： 122分钟
+评分：豆瓣7.77.7
+同学麦娜丝预告片·花絮同学麦娜丝 预告片1 (中文字幕)
+同学麦娜丝 预告片2 (中文字幕)
+同学麦娜丝 预告片3 (中文字幕)
+同学麦娜丝 电视版 (中文字幕)
+同学麦娜丝 花絮1 (中文字幕)
+同学麦娜丝 花絮2：郑人硕特辑 (中文字幕)
+同学麦娜丝百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+
+
+
+
+度盘
+同学麦娜丝百度云网盘密码： dn8x
+
+
+
+
+
+
+
+
+
+同学麦娜丝迅雷下载：
+
+
+
+磁力
+同学麦娜丝.2020.HD1080p.中文字幕.mp4
+
+
+
+
+
+
+
+
+
+
+
+电驴
+同学麦娜丝.2020.HD1...
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="同学麦娜丝"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/52/c5b69478c528a6ad3728d4e29526672c.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">史酷比：快乐万圣节</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>史酷比：快乐万圣节</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+史酷比：快乐万圣节原名： Happy Halloween, Scooby-Doo!
+导演： Maxwell Atoms
+主演：弗兰克·维尔克 马修·里沃德 Grey Griffin
+类型： 剧情 喜剧 动画 悬疑 冒险
+地区： 美国
+年代： 2020
+语言： 英语
+评分：豆瓣暂无暂无
+史酷比：快乐万圣节百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+
+
+
+
+度盘
+史酷比：快乐万圣节百度云网盘密码： qfua
+
+
+
+
+
+
+
+
+
+史酷比：快乐万圣节迅雷下载：喜欢《史酷比：快乐万圣节》的人也喜欢：
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="史酷比：快乐万圣节"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/16/92/29e10cc0bb25a932bb8208ed44b6947a.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">告别前的30分钟</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>告别前的30分钟</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+告别前的30分钟原名： サヨナラまでの30分
+别名：说再见前的30分钟(台) / 再见前的30分钟 / 离道别只差30分 / Our 30 Minutes Session
+导演： 萩原健太郎
+主演：真剑佑 北村匠海
+类型： 剧情
+地区： 日本
+年代： 2020
+语言： 日语
+长度： 115分钟
+评分：豆瓣7.1暂无
+告别前的30分钟百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+
+
+
+
+度盘
+告别前的30分钟百度云网盘密码： ai2t
+
+
+
+
+
+
+
+
+
+告别前的30分钟迅雷下载：
+
+
+
+电驴
+[告别前的30分钟.Our 30 Minutes Session.2020.BD720p.日语中字.mp4 1.3GB](ed2k://|file|[钛影视taiyingshi.vip]告别前的30分钟.Our 30 Minutes Session.2020.BD720p.日...
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="告别前的30分钟"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/52/b118379219d3ae25f4c7d5b017b17dca.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">吓吓朱莉</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>吓吓朱莉</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+吓吓朱莉原名： Let’s Scare Julie
+别名：Let’s Scare Julie to Death
+导演： Jud Cremata
+主演：Troy Leigh-Anne Johnson, Odessa A’zion
+类型： 悬疑 惊悚 恐怖
+地区： 美国
+年代： 2020
+语言： 英语
+长度： 83分钟
+评分：豆瓣暂无暂无
+吓吓朱莉百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+吓吓朱莉迅雷下载：
+
+
+
+电驴
+[吓吓朱莉.Let’s Scare Julie.2020.HD1080p.中英字幕.mkv 1.38GB](ed2k://|file|[钛影视taiyingshi.vip]吓吓朱莉.Let’s Scare Julie.2020.HD1080p.中英字幕.mkv|1486158159|8A4FE21415822949CFFA6B2310FC710F...
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="吓吓朱莉"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/51/79155c97ccd7cf21c93bd42d39af66c7.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">呼叫班德拉斯</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>呼叫班德拉斯</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+呼叫班德拉斯原名： Позивний «Бандерас»
+别名：Call Sign Banderas / Pozivniy «Banderas»
+主演：Vladimir Romanko Oleg Vlasov Nikolay Zmeyevskiy
+类型： 剧情 惊悚 战争
+地区： 乌克兰
+年代： 2018
+语言： 乌克兰语 俄语
+长度： 113分钟
+评分：豆瓣暂无暂无
+呼叫班德拉斯百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+
+
+
+
+度盘
+呼叫班德拉斯百度云网盘密码： xkw2
+
+
+
+
+
+
+
+
+
+呼叫班德拉斯迅雷下载：喜欢《呼叫班德拉斯》的人也喜欢：
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="呼叫班德拉斯"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/50/5c08ebd1cb7a94c44095031d3995823a.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">咸鱼翻身</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>咸鱼翻身</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+咸鱼翻身导演： 董伟
+主演：李健仁 梁家仁 钟伟强 程东 黄一山 马雪阳 Boz 董方卓
+类型： 喜剧
+地区： 大陆
+年代： 2020
+语言： 汉语普通话
+评分：豆瓣暂无
+咸鱼翻身百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+咸鱼翻身迅雷下载：
+
+
+
+电驴
+咸鱼翻身.2020.HD1080p.国语中字.mp4电驴下载 1.18GB
+
+
+
+
+
+
+
+
+
+喜欢《咸鱼翻身》的人也喜欢：
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="咸鱼翻身"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/52/da979a5057cb683400899ca618437b2c.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">哦，我的青蛙王子</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>哦，我的青蛙王子</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+哦，我的青蛙王子别名：青蛙王子
+导演： 钟美丽 岳云娟
+主演：高圣语 朱浪 贺刚 楼学贤
+地区： 大陆
+年代： 2020
+语言： 汉语普通话
+评分：豆瓣暂无
+哦，我的青蛙王子百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+哦，我的青蛙王子迅雷下载：
+
+
+
+磁力
+哦我的青蛙王子.2020.HD1080p.国语中字.mp4
+
+
+
+
+
+
+
+
+
+哦，我的青蛙王子剧情简介平凡少女花诗棋转来新学校，刚上课就因为手机铃声吸引了男神欧少森。花诗棋的手机铃声，让他想起了自己去世的母亲，从而对花诗棋产生亲切感。在课间课上欧少森总是有意无意的帮助花诗棋，使花诗棋对其心生好感。与家里矛盾日渐升温的欧少森，一气之下离家出走，恰巧来到花诗棋家的奶茶店，花妈妈发现欧少森是自己女儿的同学便热情的招待了他；欧少森向花妈妈提出兼职打工的意向，高甜强势突围，狗粮暴击预警就此开始。欧少森不仅工作非常努力...
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="哦，我的青蛙王子"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/48/8a347c3f52da359e3033aa447612315b.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">哦！文姬</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>哦！文姬</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+哦！文姬原名： 오! 문희
+别名：名侦探奶奶(台) / Oh! Moon Hee / Oh! My Gran
+导演： 정세교
+主演：罗文姬 李熙俊 崔元英 朴智英 이진주
+地区： 韩国
+年代： 2020
+语言： 韩语
+评分：豆瓣暂无
+哦！文姬百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+
+
+
+
+度盘
+哦！文姬百度云网盘密码： tjq8
+
+
+
+
+
+
+
+
+
+哦！文姬迅雷下载：
+
+
+
+电驴
+[哦！文姬.Oh！My Gran.2020.HD720p.韩语中字.mp4 1.25GB](ed2k://|file|[钛影视taiyingshi.vip]哦！文姬.Oh！My Gran.2020.HD720p.韩语中字.mp4|1340283757|BA089B0D11959A0B48FB0787AA9A75FF|h=47CPP7CIVHQSLRU5I6RVKYNTGCYFK5O...
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="哦！文姬"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/52/6dd6dced726bfa01c41c365f7f6c7512.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">唐廷传之陈塘恩仇</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>唐廷传之陈塘恩仇</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+唐廷传之陈塘恩仇导演： 苏仕廷
+主演：苏仕廷 吴丹 邱健 何夏昕 林诗苒 李宏志 杨欢欢 商秉驰
+地区： 大陆
+年代： 2020
+长度： 76分钟
+评分：豆瓣暂无
+唐廷传之陈塘恩仇百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+唐廷传之陈塘恩仇迅雷下载：
+
+
+
+磁力
+唐廷传之陈塘恩仇.2020.HD1080p.国语中字.mp4
+
+
+
+
+
+
+
+
+
+唐廷传之陈塘恩仇剧情简介本片将悬疑、玄幻、武打融入到一个关于江湖恩怨情仇的故事里，多条线索、多个人物交织在一起。一座荒宅旅馆、一个落魄编剧、一个诡异莫测的老板、一个阴险狠毒的老妈子、一个嗜血杀戮的厨子、一个行为怪异的流浪客、一个疯癫痴呆的女人……一起展开一场惊心动魄的三个死亡夜晚，最后终于揭开了一段沉潭二十年的灭门惨案谜底的故事。
+
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="唐廷传之陈塘恩仇"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
+    
+    <li  class="article-excerpt-wrap " _href = "/13522.html">
+        <div class="article-img img-ajax" data-src= http://www.taiyingshi.vip/img/movie/17/50/cf86e001cd5920e96bb675d637e2a85b.jpg>
+           <div class="loading-img"><i class="fa fa-pulse fa-spinner"></i></div>
+        </div>
+        <div class="article-excerpt">
+            
+            <a class="article-title-link" href="/13522.html">
+                <h2 class="article-title">唐少女汐彦</h2>
+            </a>
+            
+            <p class="article-content">
+                
 
-      <article class="recent-post-item">
-        <a class="title" href="/13522.html"><h2>唐少女汐彦</h2></a>
-        <div class="post-meta">
-          
-          <time class="time" datetime="2021-04-06T14:37:06.000Z">
-            2021-04-06
-          </time>
-          
-          <span class="slash">/</span>
-          
-          <ul class="index-tag-list" itemprop="keywords"><li class="index-tag-list-item"><a class="index-tag-list-link" href="/tags/%E9%BB%98%E8%AE%A4/" rel="tag">默认</a></li></ul>
-          
+
+
+
+唐少女汐彦导演： 高翊浚
+主演：郑雅文
+地区： 大陆
+年代： 2019
+语言： 汉语普通话
+长度： 61分钟
+评分：豆瓣暂无
+唐少女汐彦百度云资源：(若已失效可尝试复制链接到百度网盘离线下载)
+唐少女汐彦迅雷下载：
+
+
+
+电驴
+唐少女汐彦.2019.HD1080P.国语中字.mp4电驴下载 1.22GB
+
+
+
+
+
+
+
+
+
+
+
+HTTP
+在线地址：http://66s/aiqingpian/11356.html
+
+
+
+
+
+
+
+
+
+
+
+磁力
+唐少女汐彦.1080p.HD国语中字无水印.mp4
+
+
+
+
+
+
+
+
+
+唐少女汐彦剧情简介某日，西域进献给唐皇的佛祖舍利不翼而飞，唐皇将此案交给刚正不阿又英俊潇洒的袁大人调查。袁大人刚得到消息，就听闻一位叫汐彦的少女亲来投案。袁大人在审问少女汐彦的过程中，发现此女跟此案并无多少干系。而少女汐彦亲来投案的缘由，竟是因为倾慕袁大人已久。这让刚正不...
+            </p>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>默认</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            默认
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2021/04/06</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="唐少女汐彦"
+              data-leadcloud-url="/13522.html"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
+    <a href="/13522.html" class="read-article">阅读全文</a>
+    
+</div>
 
         </div>
-
         
-        <a class="more" href="/13522.html"> 阅读全文〉</a>
-      </article>
+    </li>
     
-  </div>
+    
 
+</ul>
 
+<div id="page-pagination">
+    <div id="page-nav">
+        <a class="extend prev" rel="prev" href="/page/14/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="page-number" href="/page/14/">14</a><span class="page-number current">15</span><a class="page-number" href="/page/16/">16</a><a class="page-number" href="/page/17/">17</a><span class="space">&hellip;</span><a class="page-number" href="/page/52/">52</a><a class="extend next" rel="next" href="/page/16/">Next &raquo;</a>
+    </div>
+</div>
 
     </div>
-
+    <footer id="footer">
     
-      <nav class="page-nav text-center">
-          <a class="extend prev" rel="prev" href="/page/14/">〈</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><span class="page-number current">15</span><a class="page-number" href="/page/16/">16</a><span class="space">&hellip;</span><a class="page-number" href="/page/52/">52</a><a class="extend next" rel="next" href="/page/16/">〉</a>
-      </nav>
-    
-
-  </div>
-  <footer class="footer text-center">
-    <div id="bottom-inner">
-        <a class="bottom-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.0xff000000.com">首页</a> |
-        <a class="bottom-item" href="https://0xff000000.com" rel="external nofollow noreferrer" target="_blank">主站</a> |
-        <a class="bottom-item" href="https://github.com/KevinOfNeu" rel="external nofollow noreferrer" target="_blank">GitHub</a> |
-        <a class="bottom-item" href="https://hexo.io" rel="external nofollow noreferrer" target="_blank">Powered by hexo</a> |
-        <a class="bottom-item" href="https://github.com/KevinOfNeu/hexo-theme-xoxo" rel="external nofollow noreferrer" target="_blank">Theme xoxo</a>
+    <div class="social">
+        
+        <a href="https://www.example1.com" rel="external nofollow noreferrer" class="fa fa-free-code-camp" target="_blank" title="freecodecamp"></a>
+        
+        <a href="https://www.example2.com" rel="external nofollow noreferrer" class="fa fa-github" target="_blank" title="Follow me~"></a>
+        
     </div>
+    
+    <div>
+        
+        <a href="/" class="copyright-links">小赵</a>&copy;2015 - 2021.All Rights
+        Reserved.
+    </div>
+    <p>Powered by <a href="https://hexo.io" rel="external nofollow noreferrer" class="copyright-links" target="_blank">Hexo</a> | Theme by <a
+                href="https://github.com/GeekaholicLin" class="copyright-links" target="_blank">GeekaholicLin</a>
+    </p>
+    
+    
+    <p>
+        <span id="busuanzi_container_site_uv" class="fa fa-bar-chart">
+        欢迎第<span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span>位小伙伴~
+        </span>
+    </p>
+    
 </footer>
+
+</div>
+    <ul id="tools">
+    <li class="totop-btn fa fa-angle-up"></li>
+    <li class="exchange-btn fa fa-exchange"></li>
   
+    
 
-<script>
-  (function(window, document, undefined) {
+    
+</ul>
+<p id="process"></p>
+<div id="search-overlay">
+    <div class="search-area-wrap">
+        <div id="search-area">
+            <div class="input-wrap focus">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input id="search-input" autofocus autocomplete="off" type="text"
+                       placeholder="search this website..."/>
+            </div>
+            <ul id="search-result">
+                <li class="load-first"><i class="fa fa-spinner fa-pulse"></i></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-    var timer = null;
 
-    function returnTop() {
-      cancelAnimationFrame(timer);
-      timer = requestAnimationFrame(function fn() {
-        var oTop = document.body.scrollTop || document.documentElement.scrollTop;
-        if (oTop > 0) {
-          document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
-          timer = requestAnimationFrame(fn);
-        } else {
-          cancelAnimationFrame(timer);
-        }
-      });
+    
+<script src="/js/highsong.js"></script>
+
+
+
+
+
+<script src="/js/search.js"></script>
+
+<script type="text/javascript">
+    //theme config datas
+    var copyrightObj = {};
+    copyrightObj.enable = 'true';
+    copyrightObj.triggerCopyLength = '200';
+    copyrightObj.appendText = '商业转载请联系作者获得授权,非商业转载请注明出处 © example';
+    var leancloudObj = {};
+    leancloudObj.enable = 'true';
+    leancloudObj.className = 'BlogCounter';
+    leancloudObj.limits = '10';
+</script>
+<script type="text/javascript">
+    var search = {};
+    var search_path = "search.xml";
+    if (!search_path) {
+        search_path = "search.xml";
     }
-
-    var hearts = [];
-    window.requestAnimationFrame = (function() {
-      return window.requestAnimationFrame ||
-        window.webkitRequestAnimationFrame ||
-        window.mozRequestAnimationFrame ||
-        window.oRequestAnimationFrame ||
-        window.msRequestAnimationFrame ||
-        function(callback) {
-          setTimeout(callback, 1000 / 60);
-        }
-    })();
-    init();
-
-    function init() {
-      css(".heart{z-index:9999;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
-      attachEvent();
-      gameloop();
-      addMenuEvent();
-    }
-
-    function gameloop() {
-      for (var i = 0; i < hearts.length; i++) {
-        if (hearts[i].alpha <= 0) {
-          document.body.removeChild(hearts[i].el);
-          hearts.splice(i, 1);
-          continue;
-        }
-        hearts[i].y--;
-        hearts[i].scale += 0.004;
-        hearts[i].alpha -= 0.013;
-        hearts[i].el.style.cssText = "left:" + hearts[i].x + "px;top:" + hearts[i].y + "px;opacity:" + hearts[i].alpha + ";transform:scale(" + hearts[i].scale + "," + hearts[i].scale + ") rotate(45deg);background:" + hearts[i].color;
-      }
-      requestAnimationFrame(gameloop);
-    }
-
-    /**
-     * 给logo设置点击事件
-     * 
-     * - 回到顶部
-     * - 出现爱心
-     */
-    function attachEvent() {
-      var old = typeof window.onclick === "function" && window.onclick;
-      var logo = document.getElementById("logo");
-      if (logo) {
-        logo.onclick = function(event) {
-          returnTop();
-          old && old();
-          createHeart(event);
-        }
-      }
-      
-    }
-
-    function createHeart(event) {
-      var d = document.createElement("div");
-      d.className = "heart";
-      hearts.push({
-        el: d,
-        x: event.clientX - 5,
-        y: event.clientY - 5,
-        scale: 1,
-        alpha: 1,
-        color: randomColor()
-      });
-      document.body.appendChild(d);
-    }
-
-    function css(css) {
-      var style = document.createElement("style");
-      style.type = "text/css";
-      try {
-        style.appendChild(document.createTextNode(css));
-      } catch (ex) {
-        style.styleSheet.cssText = css;
-      }
-      document.getElementsByTagName('head')[0].appendChild(style);
-    }
-
-    function randomColor() {
-      // return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + ")";
-      return "#F44336";
-    }
-
-    function addMenuEvent() {
-      var menu = document.getElementById('menu-main-post');
-      if (menu) {
-        var toc = document.getElementById('toc');
-        if (toc) {
-          menu.onclick = function() {
-            if (toc) {
-              if (toc.style.display == 'block') {
-                toc.style.display = 'none';
-              } else {
-                toc.style.display = 'block';
-              }
-            }
-          };
-        } else {
-          menu.style.display = 'none';
-        }
-      }
-    }
-
-  })(window, document);
+    search.path = "/" + search_path;
+    search.func =  _ajax.init();
 </script>
 
-  
+<script src="/js/app.js"></script>
 
 
 
