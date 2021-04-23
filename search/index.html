@@ -53,7 +53,6 @@
   
 <script src="/js/copy.js"></script>
 
-<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="小赵" type="application/atom+xml">
 </head>
 
 	<body>
@@ -141,157 +140,313 @@
 			<h1></h1>
 			<small>2021/4/23</small>
 			<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.2.1/css/hint.min.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><!DOCTYPE html>
-<html lang="">
-<div class="search-container" id="main"><div class="search"><span class="search-title">站内搜索</span><form class="search-form" autocomplete="off" action="/search/"><div class="control search-input"><input class="input search-input" maxlength="50" name="s" placeholder="请输入关键字..." id="search-input" type="search" required></div><div class="control search-control"><button class="button search-button" type="submit">搜索</button></div></form></div><div class="search-result" id="search-result"><noscript><p style="text-align:center">请先启用 JavaScript 以使用站内搜索功能。
+<head>
+  <meta charset="utf-8">
+  
+  <title>
+    搜索 | 求索日记
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta name="theme-color" content="#4184f3">
+  
+  
+  <link href="https://shuxhan-imgbed.oss-cn-hangzhou.aliyuncs.com/img/20210108143023.png" rel="icon" />
+  
+
+  
+<link rel="stylesheet" href="/css/highlight.light.css">
+
+  
+<link rel="stylesheet" href="/css/prism-customize.css">
+
+  
+<link rel="stylesheet" href="/css/nav-icon.css">
+
+  
+<link rel="stylesheet" href="/css/waves.min.css">
+
+  
+<link rel="stylesheet" href="/css/jquery.tocify.css">
+
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+<link rel="stylesheet" href="/css/nav-indicator.css">
+
+  
+<link rel="stylesheet" href="/css/twikoo.css">
+
+  
+<link rel="stylesheet" href="/css/search.css">
+
+  
+  
+
+  
+
+  </meta>
+  </meta>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  
+<script src="/js/comment.js"></script>
+
+  
+<script src="/js/copy.js"></script>
+
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="求索日记" type="application/atom+xml">
+</head>
+
+	<body>
+		<header>
+			<!-- cover image or sth. -->
+		</header>
+		<div id="main" class="m-scene">
+			
+<div class="nav-wrapper" id="header">
+
+    <div class="container">
+        <nav>
+            
+            
+            <div class="logo wave">
+                <a href="/" id="logo">
+                    求索日记
+                </a>
+            </div>
+
+            
+
+            <div class="nav-toggle-icon" >
+                <div class="material-hamburger">
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="menu-wrapper">
+                <div class="nav-indicator">
+                </div>
+                <ul class="menus">
+                    
+                     
+                        <li>
+                            <a class="wave " href="/">
+                                首页
+                            </a>
+                        </li>
+                     
+                        <li>
+                            <a class="wave " href="/archives">
+                                归档
+                            </a>
+                        </li>
+                     
+                        <li>
+                            <a class="wave " href="/about">
+                                关于
+                            </a>
+                        </li>
+                     
+                        <li>
+                            <a class="wave " href="/message">
+                                留言
+                            </a>
+                        </li>
+                     
+                        <li>
+                            <a class="wave " href="/search">
+                                搜索
+                            </a>
+                        </li>
+                     
+                    
+                   
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+</div>
+
+
+				<div class="container content">
+					<div class="scene_element scene_element--fadein">
+						<div class="search">
+	<div id="site_search">
+		<input type="text" id="local-search-input" autocomplete="off" placeholder="搜索文章..." results="0" />
+		<div id="local-search-result"></div>
+	</div>
+</div>
 
 
 
-<p></script></p>
-  <script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
-  <script>
-    // A local search script with the help of [hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search)
-    // Copyright (C) 2015 
-    // Joseph Pan <http://github.com/wzpan>
-    // Shuhao Mao <http://github.com/maoshuhao>
-    // This library is free software; you can redistribute it and/or modify
-    // it under the terms of the GNU Lesser General Public License as
-    // published by the Free Software Foundation; either version 2.1 of the
-    // License, or (at your option) any later version.
-    // 
-    // This library is distributed in the hope that it will be useful, but
-    // WITHOUT ANY WARRANTY; without even the implied warranty of
-    // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-    // Lesser General Public License for more details.
-    // 
-    // You should have received a copy of the GNU Lesser General Public
-    // License along with this library; if not, write to the Free Software
-    // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
-    // 02110-1301 USA
-    // 
-    var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-      $.ajax({
-        url: path,
-        dataType: "xml",
-        success: function(xmlResponse) {
-          // get the contents from search data
-          var datas = $("entry", xmlResponse).map(function() {
-            return {
-              title: $("title", this).text(),
-              content: $("content", this).text(),
-              url: $("url", this).text()
-            };
-          }).get();
-          var $input = document.getElementById(search_id);
-          if (!$input) return;
-          var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function() {
-              var str = '<ul class=\"search-result-list\">';
-              var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-              $resultContent.innerHTML = "";
-              if (this.value.trim().length <= 0) {
-                return;
-              }
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = true;
-                var content_index = [];
-                if (!data.title || data.title.trim() === '') {
-                  data.title = "Untitled";
-                }
-                var data_title = data.title.trim().toLowerCase();
-                var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                var data_url = data.url;
-                var index_title = -1;
-                var index_content = -1;
-                var first_occur = -1;
-                // only match artiles with not empty contents
-                if (data_content !== '') {
-                  keywords.forEach(function(keyword, i) {
-                    index_title = data_title.indexOf(keyword);
-                    index_content = data_content.indexOf(keyword);
-                    if (index_title < 0 && index_content < 0) {
-                      isMatch = false;
-                    } else {
-                      if (index_content < 0) {
-                        index_content = 0;
-                      }
-                      if (i == 0) {
-                        first_occur = index_content;
-                      }
-                      // content_index.push({index_content:index_content, keyword_len:keyword_len});
-                    }
-                  });
-                } else {
-                  isMatch = false;
-                }
-                // show search results
-                if (isMatch) {
-                  str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                  var content = data.content.trim().replace(/<[^>]+>/g, "");
-                  if (first_occur >= 0) {
-                    // cut out 100 characters
-                    var start = first_occur - 20;
-                    var end = first_occur + 80;
-                    if (start < 0) {
-                      start = 0;
-                    }
-                    if (start == 0) {
-                      end = 100;
-                    }
-                    if (end > content.length) {
-                      end = content.length;
-                    }
-                    var match_content = content.substr(start, end);
-                    // highlight all keywords
-                    keywords.forEach(function(keyword) {
-                      var regS = new RegExp(keyword, "gi");
-                      match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                    });
-                    str += "<p class=\"search-result\">" + match_content + "...</p>"
-                  }
-                  str += "</li>";
-                }
-              });
-              str += "</ul>";
-              $resultContent.innerHTML = str;
-            });
-          }
-        });
-      };
-      var search_path = "search.xml";
-      if (search_path.length == 0) {
-        search_path = "search.xml";
-      }
-      var path = "/" + search_path;
-      searchFunc(path, 'local-search-input', 'local-search-result');
-    </script>
-<p>​    </p>
-  <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?FuckUBaidu";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+<script src="/js/search.js"></script>
+
+					</div>
+				</div>
+
+				<!-- 返回顶部按钮 -->
+				<div class="right-icon">
+					<div id="to-top" class="right-icon-item">
+						<a>
+							<span class="top-left"></span>
+							<span class="top-right"></span>
+						</a>
+					</div>
+				</div>
+		</div>
+		<footer class="footer">
+
+    <div class="copyright-wrap">
+      <span>&copy; 2020-2021 shuxhan</span>
+      <span id="timeDate">载入天数...</span><span id="busuanzi_container_site_pv">
+      总访问量<span id="busuanzi_value_site_pv"></span>次
+    </span>
+    
+</div>
+    
+    
+    <!-- <span id="busuanzi_container_site_uv">
+      ，本站访客数<span id="busuanzi_value_site_uv"></span>人次
+    </span> -->
+    
+</footer>
+
+<script>
+    var now = new Date();
+    function createtime() {
+      var grt = new Date("06/14/2020 12:00:00");//此处修改你的建站时间或者网站上线时间 
+      now.setTime(now.getTime() + 250);
+      days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+      document.getElementById("timeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
+    }
+    setInterval("createtime()", 1000);
+</script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/lib/jquery.js"></script>
+
+
+<script src="/lib/waves.js"></script>
+
+
+<script src="/lib/jquery-ui.js"></script>
+
+
+<script src="/lib/jquery.tocify.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+			
+<style>
+  .copy-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(206, 206, 206);
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 3px;
+    user-select: none;
+    outline: 0;
+  }
+
+  .copy-btn:hover {
+    color: #888
+  }
+
+  .highlight-wrap .copy-btn {
+    padding: 2px 6px;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    z-index: 1;
+  }
 
 
 
-  <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-116671696-1', 'auto');
-      ga('send', 'pageview');
-  </script>
+  .highlight-wrap {
+    position: relative;
+  }
 
+  #copysuccess {
+    width: 200px;
+    height: 75px;
+    position: fixed;
+    right: 50%;
+    margin-right: -100px;
+    top: 40%;
+    margin-top: -40px;
+    color: #fff;
+    font-weight: 600;
+    background: #444444d8;
+    display: none;
+    z-index: 99999;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 10px;
+    user-select: none;
+  }
+</style>
 
-</body>
+<script>
+  addLoadEvent(() => {
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<div>').addClass('copy-btn').append('复制代码').on('click', function (e) {
+        var copysuccess = document.getElementById('copysuccess');
+        copysuccess.style.display = 'block'
+        setTimeout(function () {
+          copysuccess.style.display = 'none'
+        }, 2000)
+        var code = $(this).parent().find(".code")[0].innerText
+          
+                var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+          
+                  if (result) $(this).text('复制成功')
+            else $(this).text('复制失败')
+              
+                $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制代码')
+        }, 1000)
+      }).append(e)
+    })
+  })
+</script>
+
+				<div id="copysuccess">复制成功<br>欢迎阅读文章~</div>
+	</body>
+
 </html>
 
+<script>
+	$('#to-top').click(function () { $('html,body').animate({ scrollTop: '0px' }, 500); return false; });
+</script>
 		</article>
 		<div class="comments">
     <h3 id="commenttitle" style="margin-top: 20px;margin-left: 10px;">评论区</h3>
